@@ -9,17 +9,25 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule,MatInputModule} from "@angular/material";
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { MenuComponent } from './menu/menu.component';
+import {RouterModule} from "@angular/router";
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AutocompleteComponent
+    AutocompleteComponent,
+    CheckboxComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatMenuModule,MatAutocompleteModule,FormsModule,
-    ReactiveFormsModule,MatFormFieldModule,MatInputModule
+    ReactiveFormsModule,MatFormFieldModule,MatInputModule,RouterModule,MatCheckboxModule,MatRadioModule,MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
