@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {AutocompleteComponent} from '../app/autocomplete/autocomplete.component'
 
-const routes: Routes = [];
+let routes: Routes = [];
+
+ routes = [
+    { path: 'autocomplete', component: AutocompleteComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
