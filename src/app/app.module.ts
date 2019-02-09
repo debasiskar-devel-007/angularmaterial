@@ -24,6 +24,16 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {LayoutComponent} from './layout/layout.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { TreeChecklistExampleComponent } from './tree-checklist-example/tree-checklist-example.component';
+import {MatTreeModule} from '@angular/material/tree'; 
 
 @NgModule({
   declarations: [
@@ -32,13 +42,15 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     CheckboxComponent,
     MenuComponent,
     DatepickerComponent,
-    FrmfieldComponent
+    FrmfieldComponent,
+    LayoutComponent,
+    TreeChecklistExampleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatMenuModule,MatAutocompleteModule,FormsModule,
-    ReactiveFormsModule,MatFormFieldModule,MatInputModule,RouterModule,MatCheckboxModule,MatRadioModule,MatCardModule,MatDatepickerModule,MomentModule,MatMomentDateModule,MatSelectModule,MatIconModule,MatSliderModule,MatSlideToggleModule
+    ReactiveFormsModule,MatFormFieldModule,MatInputModule,RouterModule,MatCheckboxModule,MatRadioModule,MatCardModule,MatDatepickerModule,MomentModule,MatMomentDateModule,MatSelectModule,MatIconModule,MatSliderModule,MatSlideToggleModule,MatDividerModule,MatListModule,MatExpansionModule,MatGridListModule,MatStepperModule,MatTabsModule,MatButtonToggleModule,MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
