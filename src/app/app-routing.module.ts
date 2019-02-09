@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AutocompleteComponent} from '../app/autocomplete/autocomplete.component'
-import {CheckboxComponent} from '../app/checkbox/checkbox.component'
+import {AutocompleteComponent} from '../app/autocomplete/autocomplete.component';
+import {CheckboxComponent} from '../app/checkbox/checkbox.component';
+import {DatepickerComponent} from '../app/datepicker/datepicker.component';
 import {MenuComponent} from '../app/menu/menu.component'
 
 let routes: Routes = [];
@@ -9,6 +10,8 @@ let routes: Routes = [];
  routes = [
     { path: 'autocomplete', component: AutocompleteComponent },
     { path: 'checkboxexample', component: CheckboxComponent },
+    { path: 'checkboxexample', component: CheckboxComponent },
+    { path: 'datepickerexample', component: DatepickerComponent },
     //{ path: '', component: MenuComponent }
 ];
 
