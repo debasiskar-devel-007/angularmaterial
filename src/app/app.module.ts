@@ -19,6 +19,11 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MomentModule } from 'ngx-moment';
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
+import { FrmfieldComponent } from './frmfield/frmfield.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -26,13 +31,14 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter";
     AutocompleteComponent,
     CheckboxComponent,
     MenuComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    FrmfieldComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatMenuModule,MatAutocompleteModule,FormsModule,
-    ReactiveFormsModule,MatFormFieldModule,MatInputModule,RouterModule,MatCheckboxModule,MatRadioModule,MatCardModule,MatDatepickerModule,MomentModule,MatMomentDateModule
+    ReactiveFormsModule,MatFormFieldModule,MatInputModule,RouterModule,MatCheckboxModule,MatRadioModule,MatCardModule,MatDatepickerModule,MomentModule,MatMomentDateModule,MatSelectModule,MatIconModule,MatSliderModule,MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
