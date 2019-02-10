@@ -33,7 +33,10 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { TreeChecklistExampleComponent } from './tree-checklist-example/tree-checklist-example.component';
-import {MatTreeModule} from '@angular/material/tree'; 
+import {MatTreeModule} from '@angular/material/tree';
+import {DemoMaterialModule} from './material-module';
+import {HttpClient,HttpClientModule} from '@angular/common/http';
+import { ButtonsandindicatorsComponent } from './buttonsandindicators/buttonsandindicators.component'; 
 
 @NgModule({
   declarations: [
@@ -44,13 +47,14 @@ import {MatTreeModule} from '@angular/material/tree';
     DatepickerComponent,
     FrmfieldComponent,
     LayoutComponent,
-    TreeChecklistExampleComponent
+    TreeChecklistExampleComponent,
+    ButtonsandindicatorsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule,HttpClientModule,
     BrowserAnimationsModule,MatMenuModule,MatAutocompleteModule,FormsModule,
-    ReactiveFormsModule,MatFormFieldModule,MatInputModule,RouterModule,MatCheckboxModule,MatRadioModule,MatCardModule,MatDatepickerModule,MomentModule,MatMomentDateModule,MatSelectModule,MatIconModule,MatSliderModule,MatSlideToggleModule,MatDividerModule,MatListModule,MatExpansionModule,MatGridListModule,MatStepperModule,MatTabsModule,MatButtonToggleModule,MatTreeModule
+    ReactiveFormsModule,MatFormFieldModule,MatInputModule,RouterModule,MatCheckboxModule,MatRadioModule,MatCardModule,MatDatepickerModule,MomentModule,MatMomentDateModule,MatSelectModule,MatIconModule,MatSliderModule,MatSlideToggleModule,MatDividerModule,MatListModule,MatExpansionModule,MatGridListModule,MatStepperModule,MatTabsModule,MatButtonToggleModule,MatTreeModule,DemoMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
